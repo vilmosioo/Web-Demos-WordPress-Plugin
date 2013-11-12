@@ -6,7 +6,7 @@ A plugin that helps developers showcase demos/documentation for their work.
 
 ### Contribute!
 
-If you have suggestions for a new add-on, feel free to email me at ioo.vilmos@gmail.com. Alternatively, you can fork the plugin from [Gihub](https://github.com/vilmosioo/Github-Tools-for-WordPress)
+If you have suggestions for a new add-on, feel free to email me at ioo.vilmos@gmail.com. Alternatively, you can fork the plugin from [Gihub](https://github.com/vilmosioo/Web-Demos-WordPress-Plugin)
 
 Or follow updates on [Twitter](http://twitter.com/vilmosioo)!
  
@@ -22,4 +22,4 @@ Or follow updates on [Twitter](http://twitter.com/vilmosioo)!
 ### Changelog
 
 *1.0 22 Oct 2013*
- * 
+ * Basic wp plugin that creates a Demo custom post.

@@ -42,4 +42,4 @@ Send any questions directly to [me](http://twitter.com/vilmosioo)!
 
 = 1.0 =
 
-# *   Added custom widget to display repository commits.
+# * Basic wp plugin that creates a Demo custom post.
