@@ -26,8 +26,8 @@ class Web_Demos_MetaBox{
 	protected function __construct() {
 		$args = array(
 			"title" => 'Repository',
-			"page" => 'demo',
-			"class" => 'web_demos_metabox',
+			"page" => 'project',
+			"class" => 'web_projects_metabox',
 			"context" => 'side',
 			"priority" => 'high',
 			'fields' => array(

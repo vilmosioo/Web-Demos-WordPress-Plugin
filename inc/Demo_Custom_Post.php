@@ -11,7 +11,7 @@
 
 class Demo_Custom_Post{
 	
-	static public function create($args = array('name' => 'Demo')){
+	static public function create($args = array('name' => 'Project')){
 		return new Demo_Custom_Post($args);
 	}
 
