@@ -12,7 +12,7 @@
 *		)
 *	));
 * 
-* Required: Utils.php
+* Required: Web_Demos_Utils.php
 */
 
 class Web_Demos_MetaBox{
@@ -38,7 +38,7 @@ class Web_Demos_MetaBox{
 			)
 		);
 
-		$this->id = Utils::generate_slug($args['title']);
+		$this->id = Web_Demos_Utils::generate_slug($args['title']);
 		$this->title = $args['title'];
 		$this->page = $args['page'];
 		$this->context = $args['context'];
@@ -75,7 +75,7 @@ class Web_Demos_MetaBox{
 			if(is_array($field)){
 				$name = $field['name'];
 			}
-			$id = Utils::generate_slug($name);
+			$id = Web_Demos_Utils::generate_slug($name);
 			if( isset( $_POST[$id] ) )  {
 				update_post_meta( $post->ID, $id, wp_kses( $_POST[$id], $allowed_html_tags ) );  
 			}
@@ -91,7 +91,7 @@ class Web_Demos_MetaBox{
 		foreach($this->fields as $field){
 			$name = is_array($field) ? $field['name'] : $field;
 			$desc = is_array($field) && isset($field['description']) ? '<p>'.$field['description'].'</p>' : '';
-			$id = Utils::generate_slug($name);
+			$id = Web_Demos_Utils::generate_slug($name);
 			$value = isset( $values[$id] ) ? esc_attr( $values[$id][0] ) : "";  
 			$type = is_array($field) && isset($field['type']) ? $field['type'] : 'text';
 			
