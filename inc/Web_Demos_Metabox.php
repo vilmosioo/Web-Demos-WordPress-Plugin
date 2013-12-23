@@ -25,7 +25,7 @@ class Web_Demos_MetaBox{
 
 	protected function __construct() {
 		$args = array(
-			"title" => 'Repository',
+			"title" => 'Info',
 			"page" => 'project',
 			"class" => 'web_projects_metabox',
 			"context" => 'side',
@@ -33,7 +33,13 @@ class Web_Demos_MetaBox{
 			'fields' => array(
 				array(
 					'name' => 'URL',
-					'type' => 'url'
+					'type' => 'url',
+					'description' => 'Repository URL'
+				),
+				array(
+					'name' => 'Demo link',
+					'type' => 'url',
+					'description' => 'Demo link'
 				)
 			)
 		);
@@ -117,7 +123,7 @@ class Web_Demos_MetaBox{
 					// case text by default
 					default:
 						echo "
-							<p><input type=\"$type\" name=\"$id\" id=\"$id\" value=\"$value\">$desc</p>
+							$desc<input type=\"$type\" name=\"$id\" id=\"$id\" value=\"$value\">
 						";
 						break;
 			}			
