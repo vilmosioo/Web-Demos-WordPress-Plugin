@@ -88,7 +88,7 @@ class Demo_Custom_Post{
 
 	public function add_custom_taxonomy(){
 		$name = 'Feature';	
-		$slug = 'features';
+		$slug = $this->slug.'-features';
 		$name_plural = 'Features';
 
 		// Add new taxonomy, NOT hierarchical (like tags)
